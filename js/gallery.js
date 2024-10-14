@@ -95,9 +95,10 @@ function handleGallaryClick(event) {
         return;
     }
 
-    const largeImage = event.target.dataset.source;
+  const largeImage = event.target.dataset.source;
+
     const instance = basicLightbox.create(`
-        <img src="${largeImage}" alt="${event.target.alt}" />
+        <img src="${largeImage}" width="1112" height="640" "${event.target.alt}" />
         `);
     
   instance.show();
